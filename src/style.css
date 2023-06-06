@@ -1,0 +1,43 @@
+body{
+    background-color: #aaa;
+}
+.stopwatch{
+    width:90%;
+    max-width: 800px;
+    background-color: #555;
+    text-align: center;
+    padding: 40px 0;
+    margin: 200px auto 0;
+    box-shadow: 10px 20px 20px rgba(23,150,255,0.4);
+    border-radius: 20px;
+}
+
+.stopwatch h1{
+    margin-top:60px;
+    font-size: 64px;
+    font-weight: 300;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  10px;
+    
+}
+
+.button img{
+    width: 50px;
+    margin: 0 20px;
+    cursor: pointer;
+    
+}
+
+#stop:hover{
+    background-color: #ff1111;
+    border-radius: 100px;
+}
+#play:hover{
+    background-color: aqua;
+    border-radius: 10%;
+}
