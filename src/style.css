@@ -39,5 +39,9 @@ body{
 }
 #play:hover{
     background-color: aqua;
-    border-radius: 10%;
+    border-radius: 100px;
+}
+#reset:hover{
+    background-color: #00ffaa;
+    border-radius: 100px;
 }
