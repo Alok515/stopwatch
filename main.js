@@ -2,7 +2,7 @@
 let [sec,min,hour] = [0,0,0];
 let displayTime = document.getElementById("dt");
 let timer = null;
-
+let pastTime = document.getElementById("pastEvent");
 
 
 //the Timer with Hour Min and Sec 
@@ -45,6 +45,7 @@ function stopWatch(){
 //reset timer Function changes the timer to 00:00:00
 function resetWatch(){
     clearInterval(timer);
+    pastTime.innerText = 'Last Count is '+ hour + ':' + min + ':' + sec; 
     [sec,min,hour]=[0,0,0];
     displayTime.innerText = "00:00:00";
 }
