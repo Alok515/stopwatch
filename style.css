@@ -16,7 +16,7 @@ body{
     margin-top:60px;
     font-size: 64px;
     font-weight: 300;
-    color:#fff;
+    color:#000;
 }
 
 .button{
@@ -45,4 +45,10 @@ body{
 #reset:hover{
     background-color: #00ffaa;
     border-radius: 100px;
+}
+#pastEvent{
+    font-size: medium;
+    color:#000;
+    font-weight: 300;
+    margin-top: 20px;
 }
