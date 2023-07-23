@@ -36,15 +36,25 @@ function startWatch(){
     if(timer!==null){
         clearInterval(timer);
     }
+    
     timer = setInterval(changeTime,1000);
 }
 //Function to stop the Stopwatch timer
 function stopWatch(){
     clearInterval(timer);
+    if(hour === 0 && min === 0 && sec === 0){
+        alert("Please First Start the Stopwatch Timer");
+                return;
+    }
 }
 //reset timer Function changes the timer to 00:00:00
 function resetWatch(){
     clearInterval(timer);
+    console.log(hour,min,sec);
+    if(hour === 0 && min === 0 && sec === 0){
+        alert("Please First Start the Stopwatch Timer");
+        return;
+    }
     pastTime.innerText = 'Last Count is '+ hour + ':' + min + ':' + sec; 
     [sec,min,hour]=[0,0,0];
     displayTime.innerText = "00:00:00";
