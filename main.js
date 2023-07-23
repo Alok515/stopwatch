@@ -10,10 +10,12 @@ const changeTime = function(){
     //increaseing the seconds
     sec++;
     if(sec === 60){
+        // reset the seconds back to the beginning
         sec = 0;
         //increase the minutes
         min++;
         if(min === 60){
+            // reset the minutes back to the beginning
             min = 0;
             //increase the hours
             hour++;
@@ -23,6 +25,7 @@ const changeTime = function(){
     let h = hour < 10 ? '0'+hour : hour;
     let m = min < 10 ? '0'+min : min;
     let s = sec < 10 ? '0'+sec : sec;
+    //display the time on the page
     displayTime.innerText = h + ":" + m + ":" + s ;
 }
 
@@ -42,6 +45,7 @@ function startWatch(){
 //Function to stop the Stopwatch timer
 function stopWatch(){
     clearInterval(timer);
+    //alert the user if the timer is not running
     if(hour === 0 && min === 0 && sec === 0){
         alert("Please First Start the Stopwatch Timer");
                 return;
@@ -51,6 +55,7 @@ function stopWatch(){
 function resetWatch(){
     clearInterval(timer);
     console.log(hour,min,sec);
+    //alert the user if the timer is not running
     if(hour === 0 && min === 0 && sec === 0){
         alert("Please First Start the Stopwatch Timer");
         return;
@@ -60,6 +65,9 @@ function resetWatch(){
     displayTime.innerText = "00:00:00";
 }
 //Event handlers for the timer events using the addEventListener method    
+//Event handler fot start Button
 startButton.addEventListener("click",startWatch);
+//Event handler For Stop Button
 stopButton.addEventListener("click",stopWatch);
+//Event handler For Reset Button
 resetButton.addEventListener("click",resetWatch);
