@@ -35,7 +35,7 @@ body{
 }
 
 #stop:hover{
-    background-color: #ff1111;
+    background-color: #3af;
     border-radius: 100px;
 }
 #play:hover{
@@ -43,7 +43,7 @@ body{
     border-radius: 100px;
 }
 #reset:hover{
-    background-color: #00ffaa;
+    background-color: #ff1111;
     border-radius: 100px;
 }
 #pastEvent{
