@@ -9,12 +9,12 @@ let pastTime = document.getElementById("pastEvent");
 const changeTime = function(){
     //increaseing the seconds
     sec++;
-    if(sec===60){
-        sec=0;
+    if(sec === 60){
+        sec = 0;
         //increase the minutes
         min++;
-        if(min===60){
-            min=0;
+        if(min === 60){
+            min = 0;
             //increase the hours
             hour++;
         }
