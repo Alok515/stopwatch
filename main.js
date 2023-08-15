@@ -48,7 +48,7 @@ function stopWatch(){
     //alert the user if the timer is not running
     if(hour === 0 && min === 0 && sec === 0){
         alert("Please First Start the Stopwatch Timer");
-                return;
+        return;
     }
 }
 //reset timer Function changes the timer to 00:00:00

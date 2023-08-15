@@ -1,15 +1,32 @@
 body{
-    background-image:url(/images/backgroundp.jpg);
+    background: #111;
 }
 .stopwatch{
     width:90%;
     max-width: 1000px;
-    background-color: rgba(100,100,100,0.6);
+    background-color: rgba(230,230,230,0.8);
     text-align: center;
     padding: 40px 0;
     margin: 200px auto 0;
     box-shadow: 10px 20px 20px rgba(23,150,255,0.4);
     border-radius: 20px;
+    border: solid 5px;
+    animation:stopWatch 2s 300ms infinite ; 
+}
+
+@keyframes stopWatch{
+    0%{
+        box-shadow: -5px 10px 20px rgba(23,250,255,0.9)
+    }
+    25%{
+        box-shadow: 5px 10px 20px rgba(230,100,250,0.9)
+    }
+    75%{
+        box-shadow: 5px -10px 20px rgba(23,150,255,0.9)
+    }
+    100%{
+        box-shadow: -5px 10px 20px rgba(23,250,255,0.9)
+    }
 }
 
 .stopwatch h1{
