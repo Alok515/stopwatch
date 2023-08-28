@@ -26,16 +26,16 @@ If you want to modify or enhance the stopwatch web app, follow these steps:
 1. Clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/stopwatch-web-app.git
+git clone https://github.com/Alok515/stopwatch
 ```
 
 2. Open the project directory:
 
 ```bash
-cd stopwatch-web-app
+cd stopwatch
 ```
 
-3. Make your desired changes to the JavaScript code in the `script.js` file.
+3. Make your desired changes to the JavaScript code in the `main.js` file.
 
 4. Open the `index.html` file in your web browser to test your changes.
 
