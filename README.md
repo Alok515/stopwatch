@@ -6,7 +6,7 @@
 
 This is a simple stopwatch web application built using vanilla JavaScript. It features three buttons for controlling the timer: Start, Stop, and Reset.
 
-![Stopwatch App Screenshot](screenshot.png)
+![Stopwatch App Screenshot](./images//Screenshot%20from%202023-08-28%2012-27-33.png)
 
 ## Features
 
